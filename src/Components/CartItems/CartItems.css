@@ -1,0 +1,137 @@
+.cartItems {
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  
+  .cartItems-format {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px 0;
+    gap: 10px;
+  }
+  
+  .cartitems-quantity {
+    padding: 4px 12px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .cartitems-down {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .cartitems-total {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+  }
+  
+  .cartitems-total h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .cartitems-total button {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cartitems-promocode {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+  }
+  
+  .cartitems-promobox {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .cartitems-promobox input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #aaa;
+  }
+  
+  .cartitems-promobox button {
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 900px) {
+    .cartitems-format-main,
+    .cartItems-format {
+      grid-template-columns: 1fr 2fr 1fr 1fr;
+      font-size: 14px;
+    }
+  
+    .cartitems-format-main p:nth-child(5),
+    .cartItems-format p:nth-child(5),
+    .cartitems-format-main p:nth-child(6),
+    .cartItems-format img:nth-child(6) {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cartitems-format-main,
+    .cartItems-format {
+      grid-template-columns: 1fr 2fr;
+      font-size: 13px;
+    }
+  
+    .cartItems {
+      padding: 20px;
+    }
+  
+    .cartitems-down {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cartitems-total,
+    .cartitems-promocode {
+      width: 100%;
+    }
+  
+    .cartitems-promobox {
+      flex-direction: column;
+    }
+  
+    .cartitems-promobox button {
+      margin-top: 10px;
+    }
+  }
+  
